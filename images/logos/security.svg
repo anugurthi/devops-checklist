@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75" height="75" xmlns="http://www.w3.org/2000/svg">
+  <rect width="75" height="75" fill="#E74C3C"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="24" fill="white" font-weight="bold">
+    🔒
+  </text>
+</svg>

@@ -21,6 +21,9 @@ The following icons were created specifically for this project:
 - DevOps Checklist main logo
 - Team icon
 - Security icon
+- Observability icon (MLT Stack visualization)
+- Governance icon (Policy as Code)
+- FinOps icon (Cloud Cost Optimization)
 - Generic workflow icons
 
 ### Image Sources

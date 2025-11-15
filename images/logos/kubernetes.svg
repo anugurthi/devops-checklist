@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <circle cx="37.5" cy="37.5" r="35" fill="#326CE5" stroke="#fff" stroke-width="2"/>
+  <path d="M37.5 12 L45 28 L62 28 L50 40 L55 56 L37.5 46 L20 56 L25 40 L13 28 L30 28 Z" fill="#fff"/>
+  <circle cx="37.5" cy="37.5" r="5" fill="#fff"/>
+  <text x="37.5" y="70" font-family="Arial, sans-serif" font-size="8" fill="#326CE5" text-anchor="middle" font-weight="bold">K8s</text>
+</svg>

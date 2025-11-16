@@ -43,7 +43,7 @@ Calculate your DevOps maturity score per section:
 
 Use this as a **learning roadmap** and **career development guide**:
 - Check off items as you learn and gain hands-on experience
-- Focus on one section at a time (see the [3-month roadmap](SETUP_GUIDE.md))
+- Focus on one section at a time following the [3-month roadmap](SETUP_GUIDE.md#learning-3-month-roadmap)
 - Build portfolio projects demonstrating key practices
 - Track your progress toward DevOps engineer roles
 
@@ -305,38 +305,25 @@ aws, cloud-native, devsecops, gitops, observability, finops, platform-engineerin
 
 Welcome to DevOps! :wave: This checklist is your roadmap.
 
-#### Learning Path (12 Months)
+#### Learning Path (3 Months)
 
-- [ ] **Month 1-2: Foundations**
-  - [ ] Master Git basics (clone, commit, push, pull, branch, merge)
-  - [ ] Learn Linux command line fundamentals
-  - [ ] Start with Bash/Shell scripting
-  - [ ] Understand CI/CD concepts
+- [ ] **Month 1: Foundations & Version Control**
+  - [ ] Master Git essentials (branching, pull requests, rebasing)
+  - [ ] Brush up on Linux fundamentals and shell scripting
+  - [ ] Learn CI/CD concepts and pipeline stages
+  - [ ] Build a personal knowledge base for quick notes
 
-- [ ] **Month 3-4: CI/CD & Containers**
-  - [ ] Set up Jenkins/GitHub Actions locally
-  - [ ] Create your first pipeline
-  - [ ] Learn Docker basics
-  - [ ] Build and run containers
-  - [ ] Push images to Docker Hub/ECR
+- [ ] **Month 2: CI/CD, Containers & Cloud Basics**
+  - [ ] Set up Jenkins or GitHub Actions locally/in the cloud
+  - [ ] Build a basic pipeline with automated tests
+  - [ ] Learn Docker fundamentals and publish an image to a registry
+  - [ ] Explore AWS core services (IAM, EC2, S3) using the free tier
 
-- [ ] **Month 5-6: Cloud & IaC**
-  - [ ] Get AWS free tier account
-  - [ ] Learn EC2, S3, VPC basics
-  - [ ] Start with Terraform
-  - [ ] Provision simple infrastructure
-
-- [ ] **Month 7-8: Security & Quality**
-  - [ ] Integrate SonarQube in pipeline
-  - [ ] Learn about SAST/DAST/SCA tools
-  - [ ] Understand secrets management
-  - [ ] Practice secure coding
-
-- [ ] **Month 9-12: Advanced Topics**
-  - [ ] Container orchestration (**ECS/Kubernetes**)
-  - [ ] Advanced AWS services
-  - [ ] Monitoring and logging (**Prometheus/Grafana**)
-  - [ ] Build complete end-to-end projects
+- [ ] **Month 3: Infrastructure, Security & Observability**
+  - [ ] Provision cloud infrastructure with Terraform (remote state optional for solo learners)
+  - [ ] Learn Kubernetes/ECS fundamentals and deploy a sample app
+  - [ ] Integrate code quality (SonarQube) and security scans (SAST/SCA)
+  - [ ] Set up basic monitoring/logging (Prometheus/Grafana or managed services)
 
 #### Portfolio Projects
 
@@ -942,7 +929,7 @@ Modern artifact management requires **centralized storage, security, and automat
   - [ ] LDAP/Active Directory/SAML integration
   - [ ] Token-based authentication for CI/CD (no passwords in pipelines)
   - [ ] Multi-factor authentication (MFA) for admin access
-  - [ ] API keys rotation policy
+  - [ ] API keys rotation policy (90 days max)
 
 - [ ] **Authorization**
   - [ ] Role-based access control (RBAC)
@@ -1381,7 +1368,7 @@ Modern cloud-native applications require **robust container orchestration**. Kub
   - [ ] External secrets operator for cloud secret managers
   - [ ] Secrets encrypted at rest (KMS)
   - [ ] Secrets not exposed in environment variables
-  - [ ] Regular secret rotation policy
+  - [ ] Regular secret rotation policy (90 days max)
 
 ### Service Mesh (Istio/Linkerd)
 

@@ -11,8 +11,8 @@ assignees: ''
 **What's wrong?**
 (Clear description of the problem)
 
-**Location:**
-- File: (e.g., README.md, SETUP_GUIDE.md)
+-**Location:**
+- File: (e.g., README.md, CONTRIBUTING.md)
 - Section: (e.g., "Kubernetes Orchestration", "FinOps")
 - Line number (if known):
 

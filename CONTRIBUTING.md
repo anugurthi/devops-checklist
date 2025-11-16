@@ -129,3 +129,51 @@ We especially welcome contributions in:
 Feel free to open an issue for discussion before making large changes.
 
 Thank you for helping make DevOps practices more accessible! 🚀
+
+---
+
+## Checklist Style Guide (Formalized)
+
+### Format
+- Use `- [ ]` for every actionable checklist item
+- One action per line; supporting detail goes in indented sub-bullets
+- Prefer imperative voice: "Enable", "Configure", "Deploy", "Rotate"
+- Avoid vague verbs ("consider", "think about") unless marking optional context
+
+### Tag Semantics
+- ⚠️ **REQUIRED**: Non‑negotiable baseline or production gating control. Missing these should block release or trigger remediation.
+- ⭐ **PREFERRED**: Strong recommendation—provides clear value or aligns with modern best practice; acceptable to defer briefly with rationale.
+- ❌ **NOT RECOMMENDED**: Pattern/tool/config that is deprecated, unsafe, or creates long‑term technical/security debt.
+
+Use tags sparingly—prefer clarity over decoration. Do not stack multiple warning emojis; choose the most appropriate single tag.
+
+### Writing Patterns
+Good: `- [ ] Enable MFA for all IAM users`  
+Better with context: 
+```markdown
+- [ ] Enable MFA for all IAM users ⚠️ **REQUIRED**
+   - [ ] Enforce via IAM policy denying actions without MFA
+```
+Bad: `- MFA should be enabled for all IAM users because it is important for security` (passive & verbose)
+
+### Consistency Rules
+- Capitalize the first word; avoid trailing periods
+- Keep line length roughly ≤100 chars (wrap sub-bullets if needed)
+- Group related items under concise thematic sub-headings
+- Provide examples (code blocks) for complex configuration steps
+
+### New Section Creation
+If proposing a new section, include:
+1. Rationale (what gap it fills)
+2. 3–5 REQUIRED baseline items
+3. Metrics it influences (e.g., DORA, cost, MTTR)
+4. Clear boundaries (what’s explicitly out of scope)
+
+### Review Checklist (Before Opening PR)
+- [ ] Items follow formatting & tagging rules
+- [ ] No duplication with existing docs in `docs/` directory
+- [ ] All links resolve and are relative where possible
+- [ ] Code blocks render and have correct language hints
+- [ ] Security/privacy: no secrets, tokens, proprietary info
+
+---

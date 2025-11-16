@@ -32,7 +32,27 @@ devops-checklist/
 - Governance & Policy as Code
 - FinOps & Cloud Cost Optimization
 
-### 🧪 DORA & Outcome Focus
+### � Key Tooling Comparison
+
+| Tool Category | Recommended Tool(s) | Why? |
+| :--- | :--- | :--- |
+| **Version Control** | **Git (Trunk-Based)** | Enables continuous, high-frequency delivery |
+| **CI/CD Orchestration** | **GitHub Actions / GitLab CI** | Reduced operational overhead; native Git integration |
+| **Infrastructure as Code** | **Terraform** | Multi-cloud capability; mature module ecosystem |
+| **Policy as Code** | **OPA Gatekeeper** | Declarative governance for Kubernetes & infra |
+| **Observability (MLT)** | **Prometheus + Loki + Tempo** | Unified open-source stack for Metrics, Logs, Tracing |
+
+### 📊 DORA Metric Impact Mapping
+
+| Checklist Section | Primary DORA Metric Impacted |
+| :--- | :--- |
+| **CI/CD Tooling** | Deployment Frequency, Lead Time |
+| **Version Control - Git** | Lead Time for Changes |
+| **DevSecOps** | Change Failure Rate (shift-left reduces defects) |
+| **Observability** | MTTR (faster detection & recovery) |
+| **Kubernetes / GitOps** | Deployment Frequency, Change Failure Rate |
+
+### �🧪 DORA & Outcome Focus
 Guidance maps to improved deployment frequency, shorter lead times, lower MTTR, and reduced change failure rate.
 
 ---
@@ -420,6 +440,9 @@ aws, cloud-native, devsecops, gitops, observability, finops, platform-engineerin
 
 ## Team 👥
 
+Detailed checklist moved to `docs/team.md`.
+➡️ See: [Team Checklist](docs/team.md)
+
 ### Responsibilities
 
 - [ ] **Define Clear DevOps Responsibilities**
@@ -595,6 +618,8 @@ Build these to showcase your skills:
 
 ## Production & Deployment
 
+Moved to a future `docs/production.md` (to be created if needed). Current overview retained.
+
 ### CI/CD Strategy
 
 - [ ] **Define Deployment Strategy**
@@ -670,6 +695,9 @@ Build these to showcase your skills:
 
 ## Version Control - Git
 
+Full best practices moved to `docs/git.md`.
+➡️ See: [Git Checklist](docs/git.md)
+
 ### Repository Structure
 
 - [ ] **Organization**
@@ -742,6 +770,9 @@ Build these to showcase your skills:
 ---
 
 ## CI/CD Tooling
+
+Full pipeline & tooling guidance moved to `docs/cicd.md`.
+➡️ See: [CI/CD Checklist](docs/cicd.md)
 
 Modern CI/CD prioritizes **automation, security, and maintainability**. While **Jenkins** remains powerful with **Configuration as Code (JCasC)**, cloud-native alternatives like **GitHub Actions** and **GitLab CI** offer reduced operational overhead and tighter integration with modern development workflows.
 
@@ -975,6 +1006,8 @@ jobs:
 
 ## Code Quality - SonarQube
 
+Section condensed. (Consider adding `docs/code-quality.md` later.)
+
 ### Setup & Configuration
 
   - [ ] **Installation**
@@ -1011,6 +1044,8 @@ jobs:
 -----
 
 ## Containerization - Docker
+
+Detailed Docker practices moved to future `docs/docker.md` (not yet created).
 
 ### Image Best Practices
 
@@ -1071,6 +1106,8 @@ jobs:
 -----
 
 ## Artifact Management
+
+Full multi-tool artifact guidance moved to future `docs/artifacts.md` (not yet created).
 
 Modern artifact management requires **centralized storage, security, and automation**. While **Nexus** remains popular for self-hosted solutions, **JFrog Artifactory** offers advanced features, and **cloud-native registries** (ECR/ACR/GCR) provide seamless cloud integration.
 
@@ -1178,6 +1215,9 @@ Modern artifact management requires **centralized storage, security, and automat
 -----
 
 ## Application Security (DevSecOps)
+
+Detailed security workflow moved to `docs/devsecops.md`.
+➡️ See: [DevSecOps Checklist](docs/devsecops.md)
 
 ### SAST - Static Application Security Testing
 
@@ -1315,6 +1355,9 @@ Modern artifact management requires **centralized storage, security, and automat
 
 ## Infrastructure as Code - Terraform
 
+Detailed Terraform practices moved to `docs/terraform.md`.
+➡️ See: [Terraform Checklist](docs/terraform.md)
+
 ### Project Structure
 
   - [ ] **Directory Layout**
@@ -1423,6 +1466,9 @@ Modern artifact management requires **centralized storage, security, and automat
 
 ## Cloud Platform - AWS
 
+Detailed AWS baseline moved to `docs/aws.md`.
+➡️ See: [AWS Checklist](docs/aws.md)
+
 ### Account Structure
 
   - [ ] **Multi-Account Strategy**
@@ -1473,6 +1519,8 @@ Modern artifact management requires **centralized storage, security, and automat
 
 ## Container Orchestration (ECS & Kubernetes/EKS)
 
+Core EKS/ECS comparison retained; deep Kubernetes content centralized separately.
+
 ### Orchestrator Decision (ECS vs EKS)
 
   - [ ] **When to use ECS (AWS-Native)**: Simpler needs, lower operational overhead, tighter AWS integration, Fargate preferred for serverless compute.
@@ -1519,6 +1567,9 @@ Modern artifact management requires **centralized storage, security, and automat
 -----
 
 ## Kubernetes Orchestration
+
+Full Kubernetes operational checklist moved to `docs/kubernetes.md`.
+➡️ See: [Kubernetes Checklist](docs/kubernetes.md)
 
 Modern cloud-native applications require **robust container orchestration**. Kubernetes has emerged as the de facto standard for managing containerized workloads at scale across clouds.
 
@@ -1695,6 +1746,9 @@ Modern cloud-native applications require **robust container orchestration**. Kub
 -----
 
 ## Observability (The MLT Stack)
+
+Full MLT guidance moved to `docs/observability.md`.
+➡️ See: [Observability Checklist](docs/observability.md)
 
 **Modern observability requires the "MLT" (Metrics, Logging, Tracing) approach.** These three pillars work together to provide complete visibility into distributed systems.
 
@@ -1900,6 +1954,9 @@ Modern cloud-native applications require **robust container orchestration**. Kub
 
 ## Governance & Policy as Code
 
+Detailed policy enforcement moved to `docs/governance.md`.
+➡️ See: [Governance Checklist](docs/governance.md)
+
 **Modern governance requires automated policy enforcement and compliance checks.** Policy as Code enables security, compliance, and operational standards to be codified, version-controlled, and automatically enforced.
 
 **🎯 Key Recommendation:** Implement policy as code early to prevent drift and ensure compliance. Use **OPA** for Kubernetes and general-purpose policies, **Sentinel** for Terraform, and cloud-native tools for infrastructure compliance.
@@ -2040,6 +2097,9 @@ Modern cloud-native applications require **robust container orchestration**. Kub
 -----
 
 ## FinOps & Cloud Cost Optimization
+
+Detailed cost optimization checklist moved to `docs/finops.md`.
+➡️ See: [FinOps Checklist](docs/finops.md)
 
 **Cloud costs can spiral out of control without proper governance and optimization.** FinOps brings financial accountability to cloud spending through visibility, optimization, and cultural change.
 
